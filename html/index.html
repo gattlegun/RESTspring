@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="files/style.css">
+</head>
+<body>
+    <!-- we have a kanban container consisting of multiple columns
+    each column has a title, collection of items, add button, and a dragbox
+    an item is just a contenteditable div -->
+    <div class="kanban">
+        <div class="kcolumn">
+            <div class="kcolumn-title">header a</div>
+            <div class="kitems">
+                <div contenteditable class="kitem-input">Do the thing</div>
+                <div class="kdragbox"></div>
+            </div>
+            <button class="kadd-item" type="button">++ Item</button>
+        </div>
+    </div>
+</body>
+</html>
