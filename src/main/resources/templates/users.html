@@ -27,20 +27,23 @@
             </div>
         </nav>
 
-        <h1>hello, this is template: user.html</h1>
+        <div id="container" class="p-3">
 
-        <table class="table table-dark">
+          <h1>hello, this is template: user.html</h1>
+          <table class="table table-dark w-50">
             <thead>
-                <tr>
+              <tr>
                 <th scope="col">Name</th>
-                <th scope="col">uID</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="user: ${User}">
-                <td th:text="${user.Name}"></td>
-                <td th:text="${user.userid}"></td>
-            </tr>
-        </tbody>
-        </table>
+                <th scope="col">Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr th:each="user: ${user}">
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.age}"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </body>
 </html>
